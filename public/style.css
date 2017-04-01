@@ -1,0 +1,50 @@
+#map {
+  display: none;
+}
+
+.center-vert {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.right-menu {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  z-index: 1000;
+}
+.left-menu {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  z-index: 1000;
+}
+
+.bottom-left-menu {
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+  z-index: 1000;
+}
+
+.notifications {
+  position: absolute;
+  top: 6%;
+  right: 30%;
+  z-index: 1000;
+  max-height: 100%;
+  padding: 5% 5% 5% 5% !important;
+}
+.notifications .summary {
+  padding: 5% 5% 5% 5%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#feature-menu  {
+  margin-top: 3%;
+}
+#feature-menu .single, #feature-menu .double, #feature-menu .multiple, #feature-menu .all {
+  display: none;
+}

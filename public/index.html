@@ -1,0 +1,59 @@
+<html>
+<head>
+  <title>Map Sync</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css" />
+  <link rel="stylehseet" href="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.16.0/ol.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ui">
+    <!-- Map UI -->
+    <div id="map">
+      <div class="right-menu ui grid">
+        <div class="ui label">
+          <i class="users icon"></i> <span id="userCount"></span>
+        </div>
+        <div class="ui small feed notifications row">
+          <!-- Notifications to go here -->
+        </div>
+      </div>
+
+      <div class="left-menu ui">
+        <button id="drawControl" class="positive ui button">Start Drawing</button>
+        <div id="feature-menu">
+          <button id="buffer" class="ui blue button single">Buffer</button>
+          <button id="union" class="ui blue button double">Union</button>
+          <button id="intersection" class="ui blue button double">Intersection</button>
+          <button id="delete" class="ui red button all">Delete</button>
+        </div>
+      </div>
+
+      <div class="ui bottom-left-menu">
+        <button id="full-extent" class="ui button">
+          <i class="external square icon"></i>
+          View Full Extent
+        </button>
+      </div>
+
+    </div> <!-- End map -->
+  </div>
+
+  <!-- Login UI -->
+  <div id="login" class="ui middle aligned center aligned grid center-vert">
+    <div class="column">
+      <div class="ui large input">
+        <input id="usernameInput" type="text" placeholder="Enter your name..." />
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JS -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.16.0/ol.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+  <script src="mapping.js"></script>
+</body>
+</html>
