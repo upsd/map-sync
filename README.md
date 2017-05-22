@@ -12,7 +12,7 @@ For instance, users can draw features on the map (polygon features only). Once t
 
 ### An example of a user unioning two features
 ![](images/feature-selection.png)
-As can be seen on the left, the user has selected two featrues, and is presented with a list of operations that can be performed.
+As can be seen on the left, the user has selected two features, and is presented with a list of operations that can be performed.
 
 ![](images/post-union.png)
 After performing a union, the server returns the new feature to both clients. The front-end also shows updates of what operation has been attempted/completed.
